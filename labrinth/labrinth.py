@@ -1,7 +1,7 @@
 import random
 
 field_size = int(input()) * 2 + 1 # field is always square; even numbers for walls, odd available to move
-player_start_point = [random.random(1, field_size, 2), random.random(1, field_size, 2)]  # player can move to odd numbers only; [0] -- x, [1] -- y
+player_start_point = [random.randrange(1, field_size, 2), random.randrange(1, field_size, 2)]  # player can move to odd numbers only; [0] -- x, [1] -- y
 
 # create field
 field_init = list()
