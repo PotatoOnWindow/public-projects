@@ -28,4 +28,4 @@ for i in range(field_size - 1):
 
 # initialize
 for field_string in field_init:
-  print(field_string, \n)
+  print(field_string, "\n")
