@@ -5,7 +5,7 @@ player_start_point = [random.randrange(1, field_size, 2), random.randrange(1, fi
 
 # create field
 field_init = list()
-for i in range(field_size - 1):
+for i in range(field_size):
   if i == 0 or i == field_size - 1:
     field_init.append(["- " for t in range(field_size - 1)])
     field_init[i].append("-")
@@ -28,4 +28,4 @@ for i in range(field_size - 1):
 
 # initialize
 for field_string in field_init:
-  print(field_string, "\n")
+  print("".join(field_string), "\n")
