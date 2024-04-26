@@ -13,7 +13,7 @@ for i in range(field_size):
     field_init.append(["|"])
     for j in range(field_size - 1):
             if j % 2 == 0:
-              if i == player_start_point[1] and j == player_start_point[0]:
+              if i == player_start_point[1] and j + 1 == player_start_point[0]:
                 field_init[i].append(" P")  # init player  
               else:
                 field_init[i].append(" .")  # odd x
